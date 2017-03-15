@@ -1,0 +1,27 @@
+<!-- 
+Sources:
+http://www.campaignmonitor.com/blog/post/3363/updated-applying-a-background-image-to-html-email/
+http://www.campaignmonitor.com/blog/post/3170/adding-background-images-to-your-email-in-two-simple-steps/
+ -->
+
+<!-- NOTE: Height and width in VML code must equal height and with of the table cell and the image background for that cell. The VML code specifies height/width in two places. -->
+
+<table width="600" cellpadding="0" cellspacing="0" border="0">
+   <tr>
+      <!-- Backup background color is #2164a1 -->
+      <td bgcolor="2164a1" background="http://www.example.com/background_image.jpg">
+
+      <!--[if gte mso 9]>
+         <v:image xmlns:v="urn:schemas-microsoft-com:vml" id="theImage" style='behavior: url(#default#VML); display:inline-block; position:absolute; height:402px; width:600px; top:0; left:0; border:0; z-index:1;' src="http://www.example.com/background_image.jpg"/>
+         <v:shape xmlns:v="urn:schemas-microsoft-com:vml" id="theText" style='behavior: url(#default#VML); display:inline-block; position:absolute; height:402px; width:600px; top:-5; left:-10; border:0; z-index:2;'>
+      <![endif]-->
+
+     <p>If you can see this over the image, background images are successful.</p>
+
+      <!--[if gte mso 9]>
+         </v:shape>
+      <![endif]-->
+
+      </td>
+   </tr>
+</table>  
